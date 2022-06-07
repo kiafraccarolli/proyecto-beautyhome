@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Raleway:wght@400;700&display=swap');
+/* reseteo de CSS */
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: "Raleway";
+}
+/* GRID */
+.contenedorGeneral {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "header header header"
+    "section1 section1 section1"
+    "section2 section3 section3"
+    "galeria galeria galeria"
+    "footerContacto footerContacto footerContacto";
+}
+.contenedorGeneral2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+  "header header"
+  "imgM textoM"
+  "textoV imgV"
+  "footerContacto footerContacto";
+  overflow-x: hidden;
+}
+.contenedorGeneral3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+  "header header"
+  "tituloServicios tituloServicios"
+  "fotosServicios fotosServicios"
+  "footerContacto footerContacto";
+}
+.contenedorGeneral4{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+  "header header header"
+  "fotoMujer1 fotoMujer2 fotoMujer3"
+  "infoMujer1 infoMujer2 infoMujer3"
+  "footerContacto footerContacto footerContacto";
+}
+/* HEADER GENERAL */
+.header {
+  grid-area: header;
+  background-color: #554836 ;
+
+}
+.logo {
+  margin: 2.5rem;
+}
+.logo a {
+  text-decoration: none;
+  font-size: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  position: absolute;
+  text-shadow: #474747 3px 5px 2px;
+}
+.logo a:hover {
+  text-shadow: black 3px 5px 2px;
+}
+.nav {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 15px;
+  position: relative;
+  width: 60vw;
+  left: 35vw;
+}
+.nav li {
+  border: solid black 2px;
+  padding: 2px;
+  margin: 2px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5), 2px 2px 1px rgba(97, 83, 45, 0);
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+.nav a:hover {
+  color: #705f47;
+}
+.nav li:hover {
+  background-color: #cbdcb5;
+  font-weight: bold;
+}
+.menu a {
+  text-decoration: none;
+  margin: 1rem 1rem;
+  color: white;
+  font-family: "Raleway";
+}
+/* INDEX.HTML */
+.section1 {
+  grid-area: section1;
+  background-color: #cbdcb5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 2vh;
+}
+.fotoCara {
+  width: 70vw;
+}
+.fotoLogo {
+  border: solid #212121 1vh;
+  filter: drop-shadow(15px 15px 20px #705f47);
+  position: absolute;
+  left: 60vw;
+  width: 35vw;
+}
+
+.section2 {
+  grid-area: section2;
+  background-color: #cbdcb5;
+  height: 70vh;
+}
+.fotoHistoria {
+  border: solid white 10px;
+  height: 50vh;
+  position: relative;
+  margin-top: 8vh;
+  filter: drop-shadow(25px 25px 7px #705f47);
+}
+.section3 {
+  grid-area: section3;
+  background-color: #cbdcb5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 10px solid #474747;
+  border-bottom: 10px solid #474747;
+}
+.tituloHistoria{
+  font-family:"Raleway";
+  font-size: 150%;
+  font-weight: 900;
+
+}
+.parrafoIndex {
+  font-family: "Raleway";
+  font-size: 100%;
+  text-align: justify;
+  width: 50vw;
+}
+.galeria {
+  grid-area: galeria;
+  background-color: white;
+  height: 60vh;
+}
+.tituloGaleria{
+  font-size: 150%;
+  font-family: 'Questrial';
+  position: absolute;
+  left: 11.5vw;
+  margin-top: 5vh;
+}
+.usuarioIg{
+  font-size: 150%;
+  font-family: 'Questrial';
+  position: absolute;
+  left: 71vw;
+  margin-top: 4.5vh;
+}
+.cajaChica {
+  display: flex;
+  height: 35vh;
+  width: 80vw;
+  position: relative;
+  left: 10vw;
+  top: 10vh;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+.cajaChica img{
+  border: #cbdcb5 solid 10px;
+  filter: drop-shadow(15px 15px 10px #705f47)
+}
+/* MISION Y VISION.HTML */
+.fotoMision, .fotoVision{
+  height: auto;
+  width: 50vw;
+}
+.imgV{
+  grid-area: imgV;
+}
+.imgM{
+  grid-area: imgM;
+}
+.textoV{
+  grid-area: textoV;
+  background-color: #978366c5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.textoV h2, .textoM h2{
+  font-size: 150%;
+  font-weight: 900;
+  margin-bottom: 5vh;
+}
+.textoV p, .textoM p{
+  font-size: 100%;
+  text-align: center;
+  width:40vw ;
+}
+
+.textoM{
+  grid-area: textoM;
+  background-color: #cbdcb5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SERVICIOS.HTML */
+.tituloServicios{
+  grid-area: tituloServicios;
+  background-color: #cbdcb5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.tituloServicios h2{
+  font-size: 180%;
+  font-weight: 900;
+  margin-top: 5vh;
+}
+.tituloServicios select{
+  width: 15vw;
+  height: 5vh;
+  margin: 5vh;
+  font-size: 90%;
+  border-radius: 1vh;
+  border: #474747 3px solid;
+}
+.fotosServicios{
+  grid-area: fotosServicios;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+.fotoServicios{
+  width: 28vw;
+  margin: 1.5vh;
+  filter: drop-shadow(15px 15px 20px #705f47);
+
+}
+/* QUIENES SOMOS.HTML */
+.fotoMujer1{
+  grid-area: fotoMujer1;
+  justify-self: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  filter: drop-shadow(15px 20px 8px #cbdcb5);
+  height: 50vh;
+}
+.fotoMujer2{
+  grid-area: fotoMujer2;
+  justify-self: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  filter: drop-shadow(15px 20px 8px #cbdcb5);
+  height: 50vh;
+
+}
+.fotoMujer3{
+  grid-area: fotoMujer3;
+  justify-self: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  filter: drop-shadow(15px 20px 8px #cbdcb5);
+  height: 50vh;
+}
+.infoMujer1{
+  grid-area: infoMujer1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  background-color: #978366c5;
+}
+.infoMujer2{
+  grid-area: infoMujer2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  background-color: #978366c5;
+}
+.infoMujer3{
+  grid-area: infoMujer3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  background-color: #978366c5;
+}
+.infoMujer1 p, .infoMujer2 p, .infoMujer3 p{
+  text-align: center;
+  font-size: 80%;
+}
+.infoMujer1 h2, .infoMujer2 h2, .infoMujer3 h2{
+  margin-bottom: 3vh;
+  font-size: 120%;
+}
+/* FOOTER GENERAL */
+.footerContacto {
+  grid-area: footerContacto;
+  background-color: #212121;
+  height: 60vh;
+}
+.cajaGrande {
+  display: flex;
+  position: relative;
+  width: 60vw;
+  height: 40vh;
+  left: 20vw;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  top: 7vh;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 20vw;
+  height: 45vh;
+}
+.textoFantasma {
+  font-size: 100%;
+}
+.cajaContacto1 ul {
+  margin-left: 8vh;
+}
+.cajaContacto1 ul li {
+  padding: 9px;
+  font-size: 100%;
+  color: white;
+  list-style-type: none;
+}
+.cajaFormulario {
+  position: relative;
+  color: white;
+  font-size: 100%;
+}
+.botonSubmit {
+  font-size: 40%;
+  font-weight: 900;
+}
+.botonSubmit:hover {
+  background-color: #cbdcb5;
+}
+.tituloFooter {
+  font-family: "Raleway";
+  display: inline;
+  position: relative;
+  left: 25vw;
+  font-size: 150%;
+  top: 2vh;
+  color: white;
+}
+.tituloHorarios {
+  font-size: 100%;
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+  margin: 3vh 1vh 2vh 8vh;
+}
+.horarios li {
+  list-style-type: none;
+  padding: 7px;
+  font-size: 100%;
+  color: white;
+}
+.iconosRedes {
+  left: 30vw;
+  display: flex;
+  width: 2vw;
+  flex-direction: column;
+  position: absolute;
+  margin: 1vh;
+  height: 23vh;
+  justify-content: space-between;
+}
+/* MEDIA QUERIES- MOBILE LAST */
+@media (max-width:376px){
+  /* HEADER GENERAL */
+  .logo a{
+    font-size: 100%;
+  }
+  .logo{
+    margin: 3vh 0 0 13vh
+  }
+  .nav{
+    font-size: 55%;
+    left: 1vw;
+    top: 5vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+  .nav ul{
+    margin: 0;
+    left: 0;
+    flex-wrap: wrap;
+    width: 90vw;
+    align-items: stretch;
+    justify-content: center; 
+  }
+  .nav li{
+    font-size: 100%;
+    padding:0vh;
+  }
+  .nav a{
+    text-align: center;
+  }
+  .menu{
+    text-align: center;
+  }
+  /* FOOTER GENERAL */
+  .tituloHorarios{
+    font-size: 100%;
+    margin: 3vw 1vw 2vw 5vw;
+  }
+  .horarios li{
+    font-size:100%
+  }
+  .cajaFormulario{
+    font-size: 80%;
+    width: 60vw;
+  }
+  .textoFantasma{
+    margin-bottom: 2vh;
+  }
+  .iconosRedes{
+    left: 5vh;
+    top: 50vh;
+    width: 5vw;
+    height: 20vh;
+  }
+  .cajaContacto1 ul li{
+    font-size: 80%;
+    padding: 1vh;
+  }
+  .cajaContacto1{
+    margin-top: 5vh;
+    margin-left: 5vh;
+  }
+  .cajaContacto1 ul{
+    margin-left: 8vh;
+  }
+  .tituloFooter{
+    font-size: 150%;
+    left: 2vw;
+  }
+  .footerContacto{
+   height: 115vh;
+  }
+  .cajaGrande{
+    flex-wrap: wrap;
+    height: 80vh;
+    width: 80vw;
+    left:10vw;
+    flex-direction: row-reverse;
+  }
+  /* INDEX.HTML */
+  .contenedorGeneral{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas:
+    "header"
+    "section1"
+    "section2"
+    "section3"
+    "galeria"
+    "footerContacto";
+  }
+  .usuarioIg{
+    font-size: 80%;
+    margin-top: 5.5vh;
+    left: 65vw;
+  }
+  .tituloGaleria{
+    font-size: 80%;
+    left: 4vw;
+  }
+  .cajaChica{
+    flex-wrap: wrap;
+    height: 10vw;
+    width: 90vw;
+    left: 5vw;
+  }
+  .foto1, .foto2, .foto3, .foto4{
+    width: 32vw;
+    height: 30vw;
+    margin: 1vh;
+  }
+  .galeria{
+    height: 65vh;
+  }
+  .section1{
+    flex-direction: column;
+  }
+  .fotoLogo{
+    width: 35vw;
+    top: 60vw;
+    border: 0px;
+    left: 65vw
+  } 
+  .fotoCara{
+    width: 100vw;
+  }
+  .section2{
+    height: 40vh;
+  }
+  .fotoHistoria{
+    height: 50vw;
+    margin: 0;
+    left: 5vw;
+    filter: drop-shadow(20px 20px 7px #705f47);
+  
+  }
+  .section3{
+    border: 0;
+    height: 120vw;
+    justify-content: stretch;
+  }
+  .parrafoIndex{
+    font-size: 100%;
+    width: 80%;
+  }
+  .tituloHistoria{
+    font-size: 100%;
+  }
+
+  /* QUIENES SOMOS.HTML */
+  .contenedorGeneral4{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto) ;
+    grid-template-areas: 
+    "header"
+    "fotoMujer1"
+    "infoMujer1"
+    "fotoMujer2"
+    "infoMujer2"
+    "fotoMujer3"
+    "infoMujer3"
+    "footerContacto";
+  }
+  .fotoMujer1, .fotoMujer2, .fotoMujer3{
+    width: 60vw;
+    height: auto;
+
+  }
+  .infoMujer1, .infoMujer2, .infoMujer3{
+    width: 96vw;
+    border-top:  #212121 solid 2px;
+    border-bottom:  #212121 solid 2px;
+  }
+  .infoMujer1 p, .infoMujer2 p, .infoMujer3 p{
+    font-size: 90%;
+  }
+  .infoMujer1 h2, .infoMujer2 h2, .infoMujer3 h2{
+    font-size: 150%;
+  }
+  /* MISION y VISION.HTML */
+  .contenedorGeneral2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto) ;
+    grid-template-areas:
+    "header"
+    "imgM"
+    "textoM"
+    "imgV"
+    "textoV"
+    "footerContacto";
+  }
+  .imgM, .imgV{
+    height: auto;
+    width: 100vw;
+    border-top:  #212121 solid 2px;
+    border-bottom:  #212121 solid 2px;
+
+  }
+  .textoM, .textoV{
+    width: 100vw;
+  }
+  .textoM p, .textoV p{
+    font-size: 100%;
+    width: 80vw;
+    margin-bottom: 5vh;
+  }
+  .textoM h2, .textoV h2{
+    margin-top: 5vw;
+  }
+  /* SERVICIOS.HTML */
+  .contenedorGeneral3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "header"
+    "tituloServicios"
+    "fotosServicios"
+    "footerContacto";
+  }
+  .tituloServicios h2{
+    font-size: 130%;
+  }
+  .tituloServicios select{
+    width: 70vw;
+  }
+  .fotosServicios{
+    flex-direction: column;
+    align-items: center;
+  }
+  .fotoCejas, .fotoPestanas, .fotoDepilacion, .fotoPeinado, .fotoUnas{
+    width: 80vw;
+    margin-bottom: 3vh;
+  }
+}

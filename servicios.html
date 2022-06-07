@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contenedorGeneral3">
+      <!-- HEADER -->
+      <header class="header">
+        <h1 class="logo">
+            <a href="./index.html"> BeautyHome</a>
+        </h1>
+        
+            <!-- MENU -->
+        <nav class="nav">
+            <ul>
+                <li class="menu"><a href="./index.html"> INICIO </a></li>
+                <li class="menu"><a href="./quienes-somos.html"> QUIENES SOMOS</a></li>
+                <li class="menu"><a href="./mision-y-vision.html"> MISION Y VISIÓN</a></li>
+                <li class="menu"><a href="./servicios.html"> SERVICIOS</a></li>
+                <li class="menu"><a href="#infoContacto"> CONTACTO</a></li>
+            </ul>
+        </nav>
+
+      </header>
+      <!-- MAIN -->
+      <section class="tituloServicios">
+        <h2 class="">NUESTRAS ESPECIALIDADES:</h2>
+        <select name="servicios" id="" class="elegirServicios">
+          <option value="pestanas">pestañas</option>
+          <option value="depilacion">depilación</option>
+          <option value="unas">uñas</option>
+          <option value="cejas">cejas</option>
+          <option value="peinados">peinados</option>
+        </select>
+      </section>
+      <section class="fotosServicios">
+        <img src="./imagenes-proyecto/foto-cejas.png" alt="" class="fotoCejas fotoServicios">
+        <img src="./imagenes-proyecto/foto-pestanas.png" alt="" class="fotoPestanas fotoServicios">
+        <img src="./imagenes-proyecto/foto-unas.png" alt="" class="fotoUnas fotoServicios">
+        <img src="./imagenes-proyecto/foto-depilacion.png" alt="" class="fotoDepilacion fotoServicios">
+        <img src="./imagenes-proyecto/foto-peinado.png" alt="" class="fotoPeinado fotoServicios">
+      </section>
+      <!-- FOOTER -->
+      <footer class="footerContacto" id="infoContacto">
+        <h2 class=" tituloFooter">Tenés alguna duda? Contáctanos!</h2>
+        <div class="cajaGrande">
+            <form action="#" method="get" class="formulario cajaFormulario" >
+                <input type="text" placeholder="nombre completo" name="nombre-completo"  class="textoFantasma">
+                <input type="email" placeholder="example@gmial.com" class="textoFantasma">
+                <textarea name="comentario" placeholder="escribínos tu comentario!" id="" cols="30" rows="8" class="textoFantasma"></textarea>
+                <input type="submit" class="botonSubmit" value="ENVIAR">
+                <label for="">
+                    <input type="checkbox">
+                    <span>Suscribirme al newsletter</span>
+                </label>
+            </form>
+            <div class="cajaContacto1">
+                <ul>  
+                    <li>Facebook: Beauty Home Official</li>
+                    <li>Instagram: @Beautyhome_</li>
+                    <li>Whatsapp: +54 1512345678</li>
+                    <li>Mail: beautyhome@clientes.com.ar</li>            
+                </ul>
+                <h3 class="tituloHorarios">HORARIOS DE ATENCIÓN</h3>
+                <ol class="horarios">
+                    <li>Lunes a Viernes- 9 a 12pm y 14 a 19pm</li>
+                    <li>Sábados- 9 a 12pm</li>
+                </ol>
+            </div>
+            <div class="iconosRedes">
+                <img src="./imagenes-proyecto/facebook.png" alt="logo Facebook">    
+                <img src="./imagenes-proyecto/instagram.png" alt="logo Instagram">    
+                <img src="./imagenes-proyecto/whatsapp.png" alt="logo Whatsapp">    
+                <img src="./imagenes-proyecto/email.png" alt="logo Mail">        
+            </div>
+        </div> 
+      </footer>
+    </div>
+  </body>
+</html>
