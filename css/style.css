@@ -120,6 +120,9 @@
   left: 60vw;
   width: 35vw;
 }
+.animate__animated, .animate__slideInRight {
+  --animate-duration: 3s;
+}
 
 .section2 {
   grid-area: section2;
