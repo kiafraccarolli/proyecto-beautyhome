@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Document</title>
   </head>
   <body>
@@ -39,15 +40,15 @@
         </select>
       </section>
       <section class="fotosServicios">
-        <img src="./imagenes-proyecto/foto-cejas.png" alt="" class="fotoCejas fotoServicios">
-        <img src="./imagenes-proyecto/foto-pestanas.png" alt="" class="fotoPestanas fotoServicios">
-        <img src="./imagenes-proyecto/foto-unas.png" alt="" class="fotoUnas fotoServicios">
-        <img src="./imagenes-proyecto/foto-depilacion.png" alt="" class="fotoDepilacion fotoServicios">
-        <img src="./imagenes-proyecto/foto-peinado.png" alt="" class="fotoPeinado fotoServicios">
+        <img src="./imagenes-proyecto/foto-cejas.png" alt="" class="fotoCejas fotoServicios wow animate__animated animate__zoomIn">
+        <img src="./imagenes-proyecto/foto-pestanas.png" alt="" class="fotoPestanas fotoServicios wow animate__animated animate__zoomIn">
+        <img src="./imagenes-proyecto/foto-unas.png" alt="" class="fotoUnas fotoServicios wow animate__animated animate__zoomIn">
+        <img src="./imagenes-proyecto/foto-depilacion.png" alt="" class="fotoDepilacion fotoServicios wow animate__animated animate__zoomIn">
+        <img src="./imagenes-proyecto/foto-peinado.png" alt="" class="fotoPeinado fotoServicios wow animate__animated animate__zoomIn">
       </section>
       <!-- FOOTER -->
       <footer class="footerContacto" id="infoContacto">
-        <h2 class=" tituloFooter">Tenés alguna duda? Contáctanos!</h2>
+        <h2 class="tituloFooter animate__animated animate__headShake">Tenés alguna duda? Contáctanos!</h2>
         <div class="cajaGrande">
             <form action="#" method="get" class="formulario cajaFormulario" >
                 <input type="text" placeholder="nombre completo" name="nombre-completo"  class="textoFantasma">
@@ -68,18 +69,22 @@
                 </ul>
                 <h3 class="tituloHorarios">HORARIOS DE ATENCIÓN</h3>
                 <ol class="horarios">
-                    <li>Lunes a Viernes- 9 a 12pm y 14 a 19pm</li>
-                    <li>Sábados- 9 a 12pm</li>
+                      <li>Lunes a Viernes- 9 a 12pm y 14 a 19pm</li>
+                      <li>Sábados- 9 a 12pm</li>
                 </ol>
             </div>
             <div class="iconosRedes">
-                <img src="./imagenes-proyecto/facebook.png" alt="logo Facebook">    
-                <img src="./imagenes-proyecto/instagram.png" alt="logo Instagram">    
-                <img src="./imagenes-proyecto/whatsapp.png" alt="logo Whatsapp">    
-                <img src="./imagenes-proyecto/email.png" alt="logo Mail">        
+                  <img src="./imagenes-proyecto/facebook.png" alt="logo Facebook" class="icono1">    
+                  <img src="./imagenes-proyecto/instagram.png" alt="logo Instagram" class="icono1">    
+                  <img src="./imagenes-proyecto/whatsapp.png" alt="logo Whatsapp" class="icono1">    
+                  <img src="./imagenes-proyecto/email.png" alt="logo Mail" class="icono1">        
             </div>
         </div> 
       </footer>
     </div>
+    <script src="./js/WOW.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>BeautyHome</title>
 </head>
 <body>
@@ -45,39 +46,43 @@
         </section>
         <!-- FOOTER -->
         <footer class="footerContacto" id="infoContacto">
-                <h2 class=" tituloFooter">Tenés alguna duda? Contáctanos!</h2>
-                <div class="cajaGrande">
-                    <form action="#" method="get" class="formulario cajaFormulario" >
-                        <input type="text" placeholder="nombre completo" name="nombre-completo"  class="textoFantasma">
-                        <input type="email" placeholder="example@gmial.com" class="textoFantasma">
-                        <textarea name="comentario" placeholder="escribínos tu comentario!" id="" cols="30" rows="8" class="textoFantasma"></textarea>
-                        <input type="submit" class="botonSubmit" value="ENVIAR">
-                        <label for="">
-                            <input type="checkbox">
-                            <span>Suscribirme al newsletter</span>
-                        </label>
-                    </form>
-                    <div class="cajaContacto1">
-                        <ul>  
-                            <li>Facebook: Beauty Home Official</li>
-                            <li>Instagram: @Beautyhome_</li>
-                            <li>Whatsapp: +54 1512345678</li>
-                            <li>Mail: beautyhome@clientes.com.ar</li>            
-                        </ul>
-                        <h3 class="tituloHorarios">HORARIOS DE ATENCIÓN</h3>
-                        <ol class="horarios">
-                            <li>Lunes a Viernes- 9 a 12pm y 14 a 19pm</li>
-                            <li>Sábados- 9 a 12pm</li>
-                        </ol>
-                    </div>
-                    <div class="iconosRedes">
-                        <img src="./imagenes-proyecto/facebook.png" alt="logo Facebook">    
-                        <img src="./imagenes-proyecto/instagram.png" alt="logo Instagram">    
-                        <img src="./imagenes-proyecto/whatsapp.png" alt="logo Whatsapp">    
-                        <img src="./imagenes-proyecto/email.png" alt="logo Mail">        
-                    </div>
-                </div> 
-        </footer>
-    </div>
+            <h2 class="tituloFooter animate__animated animate__headShake">Tenés alguna duda? Contáctanos!</h2>
+            <div class="cajaGrande">
+                <form action="#" method="get" class="formulario cajaFormulario" >
+                    <input type="text" placeholder="nombre completo" name="nombre-completo"  class="textoFantasma">
+                    <input type="email" placeholder="example@gmial.com" class="textoFantasma">
+                    <textarea name="comentario" placeholder="escribínos tu comentario!" id="" cols="30" rows="8" class="textoFantasma"></textarea>
+                    <input type="submit" class="botonSubmit" value="ENVIAR">
+                    <label for="">
+                        <input type="checkbox">
+                        <span>Suscribirme al newsletter</span>
+                    </label>
+                </form>
+                <div class="cajaContacto1">
+                    <ul>  
+                        <li>Facebook: Beauty Home Official</li>
+                        <li>Instagram: @Beautyhome_</li>
+                        <li>Whatsapp: +54 1512345678</li>
+                        <li>Mail: beautyhome@clientes.com.ar</li>            
+                    </ul>
+                    <h3 class="tituloHorarios">HORARIOS DE ATENCIÓN</h3>
+                    <ol class="horarios">
+                          <li>Lunes a Viernes- 9 a 12pm y 14 a 19pm</li>
+                          <li>Sábados- 9 a 12pm</li>
+                    </ol>
+                </div>
+                <div class="iconosRedes">
+                      <img src="./imagenes-proyecto/facebook.png" alt="logo Facebook" class="icono1">    
+                      <img src="./imagenes-proyecto/instagram.png" alt="logo Instagram" class="icono1">    
+                      <img src="./imagenes-proyecto/whatsapp.png" alt="logo Whatsapp" class="icono1">    
+                      <img src="./imagenes-proyecto/email.png" alt="logo Mail" class="icono1">        
+                </div>
+            </div> 
+          </footer>
+        </div>
+        <script src="./js/WOW.js"></script>
+        <script>
+          new WOW().init();
+        </script>
 </body>
 </html>
