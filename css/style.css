@@ -54,12 +54,22 @@
   background-color: #554836 ;
 
 }
+.titulo{
+  display: flex;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  top: 2.5vw;
+  left: 2vw;
+  
+}
 .logo {
-  margin: 2.5rem;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 .logo a {
   text-decoration: none;
-  font-size: 28px;
+  font-size: 200px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   position: absolute;
@@ -68,6 +78,10 @@
 .logo a:hover {
   text-shadow: black 3px 5px 2px;
   transition: all 0.5s;
+}
+.florLogo{
+  width: 3.5vw;
+  height: 3.5vw;
 }
 .nav {
   margin-top: 2.5rem;
@@ -207,7 +221,7 @@
   justify-content: space-evenly;
   margin-top: 2rem;
 }
-.cajaChica img{
+.foto1, .foto2, .foto3, .foto4{
   border: #cbdcb5 solid 10px;
   filter: drop-shadow(15px 15px 10px #705f47)
 }
@@ -303,9 +317,6 @@
   margin-bottom: 5vh;
   filter: drop-shadow(15px 20px 8px #cbdcb5);
   height: 50vh;
-  animation-name: cambioTamano;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 .fotoMujer2{
   grid-area: fotoMujer2;
@@ -314,10 +325,6 @@
   margin-bottom: 5vh;
   filter: drop-shadow(15px 20px 8px #cbdcb5);
   height: 50vh;
-  animation-name: cambioTamano;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-
 }
 .fotoMujer3{
   grid-area: fotoMujer3;
@@ -326,9 +333,6 @@
   margin-bottom: 5vh;
   filter: drop-shadow(15px 20px 8px #cbdcb5);
   height: 50vh;
-  animation-name: cambioTamano;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 .infoMujer1{
   grid-area: infoMujer1;
@@ -451,36 +455,44 @@
   transition: all 0.2s;
 }
 /* MEDIA QUERIES- MOBILE LAST */
-@media (max-width:425px){
+@media (max-width:485px){
   /* HEADER GENERAL */
   .logo a{
-    font-size: 100%;
+    font-size: 8vw;
   }
   .logo{
-    margin: 3vh 0 0 13vh
+    width: 60vw;
   }
+  .titulo{
+    width: 80vw;
+    left: 10vw;
+    top: 2vw;
+  }
+.florLogo{
+  width: 10vw;
+  height: 10vw;
+  margin-top: 3px;
+}
   .nav{
     font-size: 55%;
-    left: 1vw;
+    left: 0vw;
     top: 5vh;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 1rem;
   }
   .nav ul{
     margin: 0;
-    left: 0;
     flex-wrap: wrap;
-    width: 90vw;
+    width: 100vw;
     align-items: stretch;
     justify-content: center; 
   }
   .nav li{
-    font-size: 100%;
     padding:0vh;
   }
   .nav a{
     text-align: center;
+    font-size: 2.5vw;
   }
   .menu{
     text-align: center;
@@ -504,7 +516,7 @@
     left: 5vh;
     top: 50vh;
     width: 5vw;
-    height: 20vh;
+    height: 110px;
   }
   .cajaContacto1 ul li{
     font-size: 80%;
@@ -518,8 +530,9 @@
     margin-left: 8vh;
   }
   .tituloFooter{
-    font-size: 150%;
+    font-size: 8vw;
     left: 2vw;
+    width: 80vw;
   }
   .footerContacto{
    height: 115vh;
@@ -557,14 +570,16 @@
     height: 10vw;
     width: 90vw;
     left: 5vw;
+    top: 6vw;
   }
   .foto1, .foto2, .foto3, .foto4{
     width: 32vw;
     height: 30vw;
     margin: 1vh;
+    border: 2vw solid #cbdcb5;
   }
   .galeria{
-    height: 65vh;
+    height: 95vw;
   }
   .section1{
     flex-direction: column;
@@ -579,7 +594,7 @@
     width: 100vw;
   }
   .section2{
-    height: 40vh;
+    height: 65vw;
   }
   .fotoHistoria{
     height: 50vw;
@@ -590,11 +605,11 @@
   }
   .section3{
     border: 0;
-    height: 120vw;
+    height: 140vw;
     justify-content: stretch;
   }
   .parrafoIndex{
-    font-size: 100%;
+    font-size: 5vw;
     width: 80%;
   }
   .tituloHistoria{
