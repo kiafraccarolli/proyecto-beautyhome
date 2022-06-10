@@ -56,20 +56,18 @@
 }
 .titulo{
   display: flex;
-  width: 100%;
+  width: 30vw;
   position: absolute;
-  justify-content: center;
   top: 2.5vw;
   left: 2vw;
-  
 }
 .logo {
   margin-left: 5px;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 .logo a {
   text-decoration: none;
-  font-size: 200px;
+  font-size: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   position: absolute;
@@ -467,6 +465,7 @@
     width: 80vw;
     left: 10vw;
     top: 2vw;
+    justify-content: center;
   }
 .florLogo{
   width: 10vw;
